@@ -183,6 +183,19 @@ footer{max-width:1440px;margin:0 auto;padding:28px clamp(20px,4vw,48px) calc(36p
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .person{display:grid;grid-template-columns:200px minmax(0,1fr);gap:clamp(20px,3vw,40px);align-items:end}
 .person img{width:200px;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:14px;border:1px solid var(--rule);filter:grayscale(.1)}
+.kit-lede{color:var(--dim);max-width:60ch;margin:0 0 26px;font-size:18px}
+.kit-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(20px,3vw,40px)}
+.kit h3{margin:0 0 10px;font-size:15px;font-weight:500;color:var(--faint)}
+.kit-list{list-style:none;margin:0;padding:0}.kit-list li{padding:10px 0;border-top:1px solid var(--rule);color:var(--dim)}.kit-list li:first-child{border-top:0;padding-top:0}
+.kit-list a{color:var(--paper);font-weight:500;margin-left:6px}
+.kit-bios{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:clamp(20px,3vw,40px);margin-top:clamp(28px,4vw,44px)}
+.kit-bios p{margin:0 0 12px;color:var(--dim);font-size:15.5px}
+.kit-photos{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:clamp(24px,3vw,36px)}
+.kit-photos img{width:72px;height:90px;object-fit:cover;border-radius:8px;border:1px solid var(--rule)}
+.kit-book{margin-top:22px;color:var(--dim)}
+.latest{list-style:none;margin:0;padding:0}.latest li{display:grid;grid-template-columns:120px minmax(0,1fr);gap:18px;padding:14px 0;border-top:1px solid var(--rule)}.latest li:first-child{border-top:0}
+.latest time{color:var(--faint)}.latest a{font-size:clamp(18px,1.7vw,21px);letter-spacing:-.01em;text-decoration:none}.latest a:hover{text-decoration:underline}
+@media (max-width:900px){.kit-grid,.kit-bios{grid-template-columns:minmax(0,1fr)}.latest li{grid-template-columns:minmax(0,1fr);gap:2px}}
 @media (max-width:900px){
  .person{grid-template-columns:minmax(0,1fr)}
  .minerals{gap:4px}
@@ -254,6 +267,25 @@ footer{max-width:1440px;margin:0 auto;padding:28px clamp(20px,4vw,48px) calc(36p
   <section class="block" aria-labelledby="h-path">
     <h2 id="h-path">Cesta</h2>
     <ol class="path"><li><time class="mono">2024</time><span>Založil jsem Bohemia Defense.</span></li><li><time class="mono">2025</time><span>Ekonomie a management, Bc., VŠEM Praha.</span></li><li><time class="mono">2025</time><span>Citován čínskou službou BBC News jako analytik.</span></li><li><time class="mono">2025–26</time><span>Ekonomická diplomacie na Ministerstvu zahraničních věcí ČR, kancelář hlavního ekonoma.</span></li><li><time class="mono">2026</time><span>Exportní poradenství v CzechTrade; založil jsem Chytrou bezpečnost, klastr 12 firem z bezpečnostního průmyslu.</span></li><li><time class="mono">2026</time><span>Kurzy EUSPA o kosmických technologiích a budování kosmického byznysu. Vytvořil jsem OreOrbit.</span></li><li><time class="mono">2027</time><span>Ing., ekonomie a management, předpokládané dokončení.</span></li></ol>
+  </section>
+  <section class="block" aria-labelledby="h-latest" id="latest" hidden>
+    <h2 id="h-latest">Nejnovější analýzy</h2><ul class="latest"></ul>
+  </section>
+  <section class="block kit" aria-labelledby="h-speak" id="speaking">
+    <h2 id="h-speak">Vystoupení a média</h2>
+    <div>
+      <p class="kit-lede">Pro konference, podcasty, panely a rozhovory o kritických surovinách, evropském obranném průmyslu a kosmické ekonomice.</p>
+      <div class="kit-grid">
+        <div><h3>Témata</h3><ul class="kit-list"><li>Obrana Evropy stojí na deseti surovinách: kde závislost skutečně je</li><li>Vývozní kontroly jako zbraň: co čínské licence znamenají pro evropské továrny</li><li>Dodavatelské řetězce z oběžné dráhy: satelity, lodě a otevřená data</li><li>Boom obranného průmyslu ve střední Evropě a jeho surovinová úzká místa</li></ul></div>
+        <div><h3>Média</h3><ul class="kit-list"><li>Čínská služba BBC News, červenec 2025: citován jako analytik k bezpečnosti návštěvy tchajwanské viceprezidentky v Praze<a href="https://www.bbc.com/zhongwen/articles/cy8gjpe7xp8o/trad" rel="noopener">Číst</a></li><li>Index závislosti OreOrbit: měsíční údaj, který lze volně citovat s uvedením zdroje<a href="https://bohemiadefense.com/atlas/p/dependency-index-cs.html" rel="noopener">Otevřít</a></li></ul></div>
+      </div>
+      <div class="kit-bios">
+        <div><h3>Krátký medailon</h3><p id="bio-s">David Madali je pražský analytik obranného průmyslu, kritických surovin a kosmické ekonomiky. Založil Bohemia Defense a vytvořil OreOrbit, otevřený atlas surovin, na kterých stojí evropská obrana. Jako analytika ho citovala BBC News.</p><button class="pill kit-copy" type="button" data-t="bio-s" data-c="Zkopírováno"><span>Zkopírovat</span></button></div>
+        <div><h3>Delší medailon</h3><p id="bio-l">David Madali je pražský analytik obranného průmyslu, kritických surovin a kosmické ekonomiky. V roce 2024 založil Bohemia Defense, nezávislý analytický projekt o evropském obranném průmyslu, bezpečnosti a zahraniční politice, jehož příspěvky dosahují až 450 000 zobrazení na LinkedInu. V roce 2026 vytvořil OreOrbit, bezplatný živý atlas dolů, rafinerií a námořních tras, na kterých stojí deset surovin pro evropskou obranu, a jeho měsíční Index závislosti. Jako analytika ho citovala čínská služba BBC News. Vystudoval ekonomii a management na VŠEM v Praze, působil v ekonomické diplomacii na Ministerstvu zahraničních věcí ČR a v exportním poradenství v CzechTrade, kde založil klastr 12 firem z bezpečnostního průmyslu.</p><button class="pill kit-copy" type="button" data-t="bio-l" data-c="Zkopírováno"><span>Zkopírovat</span></button></div>
+      </div>
+      <div class="kit-photos"><img src="/david-madali-square.jpg" alt="" width="800" height="800" loading="lazy"><a class="pill kit-dl" href="/david-madali-press.jpg" download>Fotografie pro tisk, 1280 × 1600</a><a class="pill kit-dl" href="/david-madali-square.jpg" download>Čtvercová, 800 × 800</a></div>
+      <p class="kit-book">Pozvání posílejte na <a href="mailto:david@madali.cz?subject=Invitation">david@madali.cz</a></p>
+    </div>
   </section>
   <section class="block contact" aria-labelledby="h-contact">
     <h2 id="h-contact">Kontakt</h2>
@@ -448,5 +480,12 @@ footer{max-width:1440px;margin:0 auto;padding:28px clamp(20px,4vw,48px) calc(36p
   }
 })();
 </script>
+<script>(function(){function ooHit(e){try{if(navigator.doNotTrack==="1"||navigator.globalPrivacyControl)return;var u="https://bohemiadefense.com/atlas/count.php?e="+encodeURIComponent(e);if(navigator.sendBeacon)navigator.sendBeacon(u);else fetch(u,{method:"POST",mode:"no-cors",keepalive:true});}catch(x){}}document.addEventListener("click",function(ev){var a=ev.target.closest&&ev.target.closest("a,button");if(!a)return;var h=a.getAttribute("href")||"";if(/^mailto:/.test(h))ooHit("act:mail");else if(/sample-assessment/.test(h))ooHit("act:sample");else if(/services(-cs)?\.html/.test(h))ooHit("act:services");else if(/linkedin\.com/.test(h))ooHit("act:linkedin");else if(a.id==="nav-tour")ooHit("act:tour");},true);
+ooHit("madali:cs");
+document.querySelectorAll(".kit-copy").forEach(function(b){b.addEventListener("click",function(){var t=document.getElementById(b.getAttribute("data-t")).textContent,sp=b.querySelector("span"),o=sp.textContent;var d=function(){sp.textContent=b.getAttribute("data-c");setTimeout(function(){sp.textContent=o;},2000);};ooHit("act:bio-copy");if(navigator.clipboard)navigator.clipboard.writeText(t).then(d,function(){});else d();});});
+document.querySelectorAll(".kit-dl").forEach(function(a){a.addEventListener("click",function(){ooHit("act:press-photo");});});
+var box=document.getElementById("latest"),ul=box&&box.querySelector(".latest");
+if(ul)fetch("https://bohemiadefense.com/wp-json/wp/v2/posts?per_page=3&_fields=link,title,date").then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(ps){if(!ps||!ps.length)return;var tmp=document.createElement("div");ps.forEach(function(p){var li=document.createElement("li"),t=document.createElement("time"),a=document.createElement("a");t.className="mono";t.textContent=new Date(p.date).toLocaleDateString("cs-CZ",{day:"numeric",month:"short",year:"numeric"});tmp.innerHTML=(p.title&&p.title.rendered)||"";a.textContent=tmp.textContent;a.href=p.link;li.appendChild(t);li.appendChild(a);ul.appendChild(li);});box.hidden=false;}).catch(function(){});
+})();</script>
 </body>
 </html>
