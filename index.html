@@ -210,7 +210,21 @@ footer{max-width:1440px;margin:0 auto;padding:28px clamp(20px,4vw,48px) calc(36p
  ol.path li{grid-template-columns:76px minmax(0,1fr);gap:12px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* entrance: the name rises line by line, the globe fades and turns into place, sections rise once as they come into view */
+.js-anim .top{opacity:0;transition:opacity .8s ease .1s}
+.js-anim .hero h1 span{opacity:0;transform:translateY(34px);transition:opacity .7s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.js-anim .hero h1 span:nth-child(2){transition-delay:.1s}
+.js-anim .hero > div:first-child > *:not(h1){opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.js-anim .hero > div:first-child > *:nth-child(2){transition-delay:.3s}
+.js-anim .hero > div:first-child > *:nth-child(3){transition-delay:.42s}
+.js-anim .hero > div:first-child > *:nth-child(n+4){transition-delay:.54s}
+.js-anim .globe{opacity:0;transform:scale(.93) rotate(-8deg);transition:opacity 1.3s ease .15s,transform 1.6s cubic-bezier(.2,.7,.2,1) .15s}
+.js-anim.ready .top,.js-anim.ready .hero h1 span,.js-anim.ready .hero > div:first-child > *,.js-anim.ready .globe{opacity:1;transform:none}
+.js-anim .block{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.js-anim .block.seen{opacity:1;transform:none}
 </style>
+<script>(function(){try{if(!matchMedia("(prefers-reduced-motion: reduce)").matches){var d=document.documentElement;d.classList.add("js-anim");setTimeout(function(){d.classList.add("ready");},2500);}}catch(e){}})();</script>
 </head>
 <body>
 <header class="top">
@@ -487,5 +501,11 @@ document.querySelectorAll(".kit-dl").forEach(function(a){a.addEventListener("cli
 var box=document.getElementById("latest"),ul=box&&box.querySelector(".latest");
 if(ul)fetch("https://bohemiadefense.com/wp-json/wp/v2/posts?per_page=3&_fields=link,title,date").then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(ps){if(!ps||!ps.length)return;var tmp=document.createElement("div");ps.forEach(function(p){var li=document.createElement("li"),t=document.createElement("time"),a=document.createElement("a");t.className="mono";t.textContent=new Date(p.date).toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric"});tmp.innerHTML=(p.title&&p.title.rendered)||"";a.textContent=tmp.textContent;a.href=p.link;li.appendChild(t);li.appendChild(a);ul.appendChild(li);});box.hidden=false;}).catch(function(){});
 })();</script>
+<script>(function(){var d=document.documentElement;if(!d.classList.contains("js-anim"))return;
+requestAnimationFrame(function(){requestAnimationFrame(function(){d.classList.add("ready");});});
+var bs=document.querySelectorAll(".block");
+if(!("IntersectionObserver" in window)){bs.forEach(function(b){b.classList.add("seen");});return;}
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add("seen");io.unobserve(x.target);}});},{threshold:0.1,rootMargin:"0px 0px -5% 0px"});
+bs.forEach(function(b){io.observe(b);});})();</script>
 </body>
 </html>
