@@ -255,7 +255,7 @@ footer{max-width:1440px;margin:0 auto;padding:28px clamp(20px,4vw,48px) calc(36p
     <h2 id="h-work">Work</h2>
     <div>
       <article class="project">
-        <a class="shot" href="https://bohemiadefense.com/atlas/" aria-label="Open OreOrbit"><img src="/oreorbit.jpg" alt="OreOrbit" width="1600" height="1000" loading="lazy" decoding="async"></a>
+        <a class="shot" href="https://bohemiadefense.com/atlas/" aria-label="Open OreOrbit"><img src="/oreorbit-2026-11.jpg" alt="OreOrbit" width="1600" height="1000" loading="lazy" decoding="async"></a>
         <div>
           <h3>OreOrbit</h3>
           <p class="role mono">Creator, 2026</p>
@@ -322,7 +322,7 @@ footer{max-width:1440px;margin:0 auto;padding:28px clamp(20px,4vw,48px) calc(36p
 <script>
 (() => {
   const L = window.__L, D = window.__D;
-  const COL = {"ree": "#a78bfa", "ti": "#fb923c", "w": "#facc15", "sb": "#a9b8cc", "mg": "#2dd4bf", "mn": "#e879f9", "ga": "#22d3ee", "ge": "#4ade80", "li": "#f472b6", "co": "#60a5fa", "ni": "#a3e635", "gr": "#e4e4e7"}, ORDER = ["ree", "ti", "w", "sb", "ga", "ge", "li", "co", "ni", "gr"];
+  const COL = {"ree": "#a78bfa", "ti": "#fb923c", "w": "#facc15", "sb": "#a9b8cc", "mg": "#2dd4bf", "mn": "#e879f9", "ga": "#22d3ee", "ge": "#4ade80", "li": "#f472b6", "co": "#60a5fa", "ni": "#a3e635", "gr": "#e4e4e7"}, ORDER = ["ree", "ti", "w", "sb", "mg", "mn", "ga", "ge", "li", "co", "ni", "gr"];
   const cv = document.getElementById("globe"), ctx = cv.getContext("2d");
   const read = document.getElementById("readout");
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -335,7 +335,7 @@ footer{max-width:1440px;margin:0 auto;padding:28px clamp(20px,4vw,48px) calc(36p
   let ac = null, soundOn = false;
   try { soundOn = localStorage.getItem("madali-sound") === "1"; } catch (e) { soundOn = false; }
   const sBtn = document.getElementById("sound");
-  const PENT = [0, 3, 5, 7, 10, 12, 15, 17, 19, 22];
+  const PENT = [0, 3, 5, 7, 10, 12, 15, 17, 19, 22, 24, 27];   /* one note per mineral in ORDER (12, as in the atlas) */
   function tone(semi, dur, gain, type) {
     if (!soundOn) return;
     try {
