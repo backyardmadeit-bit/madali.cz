@@ -1,26 +1,42 @@
 # David Madali
 
-> Prague-based analyst of the defence industry, critical raw materials and the space economy. Founder of Bohemia Defense (2024) and creator of OreOrbit, a free, live atlas of the twelve critical minerals behind Europe's defence and space industries. Quoted by BBC News Chinese as an analyst. Works in Czech and English.
+> Prague-based analyst of the defence industry, critical raw materials and geopolitical security, and of the space economy. Founder of Bohemia Defense (2024), an independent analysis project on Europe's defence industry, security and foreign policy, and creator of OreOrbit, a free, live atlas of the twelve critical minerals behind Europe's defence and space industries. Quoted by BBC News Chinese as an analyst. Works in Czech and English.
+
+## Expertise
+- Critical raw materials and critical minerals for defence and space: rare earths and permanent magnets, tungsten, antimony, titanium, magnesium, manganese, gallium, germanium, lithium, cobalt, nickel and graphite
+- Europe's dependencies in the defence supply chain: who mines, refines and ships each mineral, and where the chokepoints are
+- The EU Critical Raw Materials Act (Regulation (EU) 2024/1252): the 2030 benchmarks, strategic projects and Article 24 supply-chain risk assessments for manufacturers
+- China's export controls on critical minerals and what they mean for European factories
+- Watching supply chains from orbit: satellite imagery, ships and open data
+- Economic diplomacy and the Czech and Central European defence industry
 
 ## Profile
 - [About David Madali](https://madali.cz/): background, projects, media, speaker topics and contact (Czech: https://madali.cz/cs/)
 - [Founder page on Bohemia Defense](https://bohemiadefense.com/david-madali/): background, projects and media (Czech: https://bohemiadefense.com/david-madali-cz/)
+- [Who is David Madali?](https://bohemiadefense.com/atlas/p/faq.html#david-madali): a short answer with sources (Czech: https://bohemiadefense.com/atlas/p/faq-cs.html#david-madali)
 - [LinkedIn](https://www.linkedin.com/in/davidmadali/): analysis posts that reach up to 450,000 views
 - [Press photo](https://madali.cz/david-madali-press.jpg): 1280 × 1600
 
 ## Background
 - 2024: founded Bohemia Defense, an independent analysis project on Europe's defence industry, security and foreign policy
-- 2025: Bc. in economics and management, University of Economics and Management, Prague
 - 2025: quoted by BBC News Chinese as an analyst
 - 2025–26: economic diplomacy at the Czech Ministry of Foreign Affairs, office of the chief economist
 - 2026: export consulting at CzechTrade; set up Chytrá bezpečnost, a cluster of security-industry companies
 - 2026: EUSPA training in space technologies and building a space business; built OreOrbit
 
+## Questions and answers
+- [Critical raw materials and Europe's defence: questions and answers](https://bohemiadefense.com/atlas/p/faq.html): twelve answers with current data, written by David Madali and rebuilt daily (Czech: https://bohemiadefense.com/atlas/p/faq-cs.html)
+- [What are the critical dependencies of Europe's defence industry?](https://bohemiadefense.com/atlas/p/faq.html#dependencies) (Czech: https://bohemiadefense.com/atlas/p/faq-cs.html#zavislosti)
+- [How does OreOrbit monitor supply-chain bottlenecks?](https://bohemiadefense.com/atlas/p/faq.html#monitoring) (Czech: https://bohemiadefense.com/atlas/p/faq-cs.html#monitoring)
+- [What does the EU Critical Raw Materials Act require?](https://bohemiadefense.com/atlas/p/faq.html#crma) (Czech: https://bohemiadefense.com/atlas/p/faq-cs.html#crma)
+- [Which Chinese export controls affect Europe, and what is paused?](https://bohemiadefense.com/atlas/p/faq.html#china) (Czech: https://bohemiadefense.com/atlas/p/faq-cs.html#cina)
+- [What is the Czech Republic's role in Europe's critical raw materials?](https://bohemiadefense.com/atlas/p/faq.html#czechia) (Czech: https://bohemiadefense.com/atlas/p/faq-cs.html#cesko)
+
 ## Projects
 - [Bohemia Defense](https://bohemiadefense.com/): case studies on NATO, Ukraine, Africa, the European defence industry and critical raw materials (Czech: https://bohemiadefense.com/cs/)
 - [OreOrbit atlas](https://bohemiadefense.com/atlas/): mines, refineries, sea routes and chokepoints behind twelve minerals (rare earths, titanium, tungsten, antimony, magnesium, manganese, gallium, germanium, lithium, cobalt, nickel, graphite); satellite pictures of 43 sites every week; ships, heat at the plants and disaster alerts every few hours; export-control deadlines and a quick check by product type
 - [OreOrbit Dependency Index](https://bohemiadefense.com/atlas/p/dependency-index.html): a monthly figure for China's share of EU imports of the index minerals, from Eurostat data, free to quote with credit (Czech: https://bohemiadefense.com/atlas/p/dependency-index-cs.html)
-- [OreOrbit library](https://bohemiadefense.com/atlas/p/index.html): a citable page for every mineral and site, plus guides on China's export controls, Article 24 of the EU Critical Raw Materials Act and minerals for the space industry
+- [OreOrbit library](https://bohemiadefense.com/atlas/p/index.html): a citable page for every mineral and site, plus guides on [China's export controls](https://bohemiadefense.com/atlas/p/china-export-controls.html), [Article 24 of the EU Critical Raw Materials Act](https://bohemiadefense.com/atlas/p/crma-article-24.html) and [minerals for the space industry](https://bohemiadefense.com/atlas/p/space.html)
 - [Weekly briefs](https://bohemiadefense.com/atlas/p/briefs.html): every Monday, a dated summary of the week in critical minerals and Europe's defence supply chain
 - [Services](https://bohemiadefense.com/atlas/p/services.html): the free atlas and Monday brief, paid monitoring of the minerals a company depends on, and a readiness review of one product line (Czech: https://bohemiadefense.com/atlas/p/services-cs.html)
 
@@ -34,7 +50,7 @@
 - Central Europe's defence-industry boom and its raw-material bottlenecks
 
 ## Topics
-Defence industry, critical raw materials, rare earths, export controls, space economy, supply-chain risk, European security, economic diplomacy, Central European defence markets
+Critical raw materials, critical minerals, defence industry, European security, geopolitical security, EU Critical Raw Materials Act, export controls, rare earths, supply-chain risk, space economy, economic diplomacy, Central European defence markets
 
 ## Contact
 - Email: david@madali.cz
