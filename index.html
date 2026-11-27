@@ -407,7 +407,7 @@ a:hover{text-decoration-color:var(--paper)}
 .pill{display:inline-flex;align-items:center;gap:8px;height:34px;padding:0 14px;border:1px solid var(--rule);border-radius:999px;background:transparent;color:var(--paper);font:500 13px "Hanken Grotesk",sans-serif;text-decoration:none;cursor:pointer}
 .pill:hover{border-color:rgba(236,238,233,.3)}
 .pill i{width:7px;height:7px;border-radius:50%;background:var(--faint)}
-.pill[aria-pressed="true"] i{background:var(--live);box-shadow:0 0 0 3px rgba(61,220,151,.18)}
+.pill[aria-pressed="true"] i{background:var(--live);box-shadow:none}
 .hero{min-height:100svh;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);align-items:center;gap:clamp(16px,3vw,40px);padding:96px clamp(20px,4vw,48px) 48px;max-width:1440px;margin:0 auto}
 h1{margin:0;font-weight:260;font-size:clamp(64px,10.4vw,164px);line-height:.86;letter-spacing:-.055em}
 h1 span{display:block}
@@ -436,7 +436,7 @@ main{max-width:1440px;margin:0 auto;padding:0 clamp(20px,4vw,48px)}
 .project .go{display:inline-block;margin-top:18px;font-weight:500}
 .shot{display:block;border-radius:14px;overflow:hidden;border:1px solid var(--rule);background:var(--well);transform-style:preserve-3d;transition:transform .25s ease}
 .shot img{display:block;width:100%;height:auto}
-.wordmark{position:relative;display:block;aspect-ratio:16/10;border-radius:14px;border:1px solid var(--rule);background:radial-gradient(120% 90% at 55% 40%,#11171b,#06080a 72%);overflow:hidden;text-decoration:none}
+.wordmark{position:relative;display:block;aspect-ratio:16/10;border-radius:14px;border:1px solid var(--rule);background:#0a0d0f;overflow:hidden;text-decoration:none}
 .wordmark svg{position:absolute;inset:0;width:100%;height:100%}
 .wordmark span{position:absolute;left:clamp(16px,2.4vw,28px);bottom:clamp(14px,2vw,24px);font-size:clamp(24px,2.8vw,38px);font-weight:300;letter-spacing:-.04em;color:var(--paper)}
 .press{max-width:52ch}
@@ -484,20 +484,7 @@ footer{max-width:1440px;margin:0 auto;padding:28px clamp(20px,4vw,48px) calc(36p
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 
-/* entrance: the name rises line by line, the globe fades and turns into place, sections rise once as they come into view */
-.js-anim .top{opacity:0;transition:opacity .8s ease .1s}
-.js-anim .hero h1 span{opacity:0;transform:translateY(34px);transition:opacity .7s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
-.js-anim .hero h1 span:nth-child(2){transition-delay:.1s}
-.js-anim .hero > div:first-child > *:not(h1){opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
-.js-anim .hero > div:first-child > *:nth-child(2){transition-delay:.3s}
-.js-anim .hero > div:first-child > *:nth-child(3){transition-delay:.42s}
-.js-anim .hero > div:first-child > *:nth-child(n+4){transition-delay:.54s}
-.js-anim .globe{opacity:0;transform:scale(.93) rotate(-8deg);transition:opacity 1.3s ease .15s,transform 1.6s cubic-bezier(.2,.7,.2,1) .15s}
-.js-anim.ready .top,.js-anim.ready .hero h1 span,.js-anim.ready .hero > div:first-child > *,.js-anim.ready .globe{opacity:1;transform:none}
-.js-anim .block{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
-.js-anim .block.seen{opacity:1;transform:none}
 .book-call{margin:16px 0 0}.book-call a{display:inline-flex;align-items:center;height:44px;padding:0 20px;border-radius:999px;background:#eceee9;color:#050607 !important;-webkit-text-fill-color:#050607;font-weight:600;font-size:15px;text-decoration:none;transition:opacity .2s}.book-call a:hover{opacity:.88}</style>
-<script>(function(){try{if(!matchMedia("(prefers-reduced-motion: reduce)").matches){var d=document.documentElement;d.classList.add("js-anim");setTimeout(function(){d.classList.add("ready");},2500);}}catch(e){}})();</script>
 </head>
 <body>
 <header class="top">
@@ -579,7 +566,7 @@ footer{max-width:1440px;margin:0 auto;padding:28px clamp(20px,4vw,48px) calc(36p
     <div class="person"><img src="/david-madali.jpg" alt="David Madali" width="600" height="750" loading="lazy" decoding="async"><div>
     <div>
       <div class="mail"><a class="addr" href="mailto:david@madali.cz">david@madali.cz</a>
-        <button class="pill" id="copy" type="button" data-addr="david@madali.cz" data-label="Copy email" data-done="Email copied"><span>Copy email</span></button></div><p class="book-call"><a href="https://calendly.com/david-madali/30min" target="_blank" rel="noopener">Book a 30-minute call →</a></p>
+        <button class="pill" id="copy" type="button" data-addr="david@madali.cz" data-label="Copy email" data-done="Email copied"><span>Copy email</span></button></div><p class="book-call"><a href="https://calendly.com/david-madali/30min" target="_blank" rel="noopener">Book a 30-minute call</a></p>
       <p>Analysis, OreOrbit reviews, or Central European defence and space markets.</p>
       <div class="links"><a href="https://www.linkedin.com/in/davidmadali/" rel="me">LinkedIn</a><a href="https://bohemiadefense.com/">Bohemia Defense</a><a href="https://bohemiadefense.com/atlas/">OreOrbit</a></div>
     </div>
@@ -660,8 +647,8 @@ footer{max-width:1440px;margin:0 auto;padding:28px clamp(20px,4vw,48px) calc(36p
       ctx.globalAlpha = on ? 1 : 0.18;
       ctx.beginPath(); ctx.arc(x, y, i === hovered ? 5 : 3.4, 0, Math.PI * 2); ctx.fillStyle = c; ctx.fill();
       if ((pick === s[1]) || i === hovered) {
-        ctx.beginPath(); ctx.arc(x, y, 9 + (i === hovered ? pulse * 6 : 0), 0, Math.PI * 2);
-        ctx.strokeStyle = c; ctx.globalAlpha = i === hovered ? 0.9 - pulse * 0.7 : 0.55; ctx.lineWidth = 1.2; ctx.stroke();
+        ctx.beginPath(); ctx.arc(x, y, i === hovered ? 12 : 9, 0, Math.PI * 2);
+        ctx.strokeStyle = c; ctx.globalAlpha = i === hovered ? 0.9 : 0.55; ctx.lineWidth = 1.2; ctx.stroke();
       }
       ctx.globalAlpha = 1;
     });
@@ -743,7 +730,6 @@ footer{max-width:1440px;margin:0 auto;padding:28px clamp(20px,4vw,48px) calc(36p
   let last = performance.now();
   function loop(now) {
     const dt = Math.min(64, now - last); last = now;
-    if (hovered >= 0 && pulse < 1) { pulse = Math.min(1, pulse + dt / 600); draw(); }
     if (!reduce && !dragging && !spinning && hovered < 0 && idleAt && now - idleAt > 8000 && !pick) spinning = true;
     if (spinning && hovered < 0) { lon0 -= dt * 0.006; draw(); }
     requestAnimationFrame(loop);
@@ -774,11 +760,5 @@ document.querySelectorAll(".kit-dl").forEach(function(a){a.addEventListener("cli
 var box=document.getElementById("latest"),ul=box&&box.querySelector(".latest");
 if(ul)fetch("https://bohemiadefense.com/wp-json/wp/v2/posts?per_page=3&_fields=link,title,date").then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(ps){if(!ps||!ps.length)return;var tmp=document.createElement("div");ps.forEach(function(p){var li=document.createElement("li"),t=document.createElement("time"),a=document.createElement("a");t.className="mono";t.textContent=new Date(p.date).toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric"});tmp.innerHTML=(p.title&&p.title.rendered)||"";a.textContent=tmp.textContent;a.href=p.link;li.appendChild(t);li.appendChild(a);ul.appendChild(li);});box.hidden=false;}).catch(function(){});
 })();</script>
-<script>(function(){var d=document.documentElement;if(!d.classList.contains("js-anim"))return;
-requestAnimationFrame(function(){requestAnimationFrame(function(){d.classList.add("ready");});});
-var bs=document.querySelectorAll(".block");
-if(!("IntersectionObserver" in window)){bs.forEach(function(b){b.classList.add("seen");});return;}
-var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add("seen");io.unobserve(x.target);}});},{threshold:0.1,rootMargin:"0px 0px -5% 0px"});
-bs.forEach(function(b){io.observe(b);});})();</script>
 </body>
 </html>
