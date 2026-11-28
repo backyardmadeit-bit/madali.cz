@@ -24,8 +24,8 @@ Reply to David in Czech unless he writes in English. Be technical and brief.
 | `fonts/` | Hanken Grotesk and DM Mono as self-hosted woff2, with their OFL licences |
 | `david-madali.jpg` (600×750), `david-madali-square.jpg` (800), `david-madali-press.jpg` (1280×1600) | Portraits. The press photo is the download in "Speaking and media". |
 | `og-david-madali-2026-11.jpg` | The share image (1200×630) |
-| `oreorbit-2026-11.jpg` | Atlas screenshot (1600×1000) in the Work section |
-| `og-david-madali.jpg`, `oreorbit.jpg` | Older versions. They stay for old links and caches; nothing on the page uses them. |
+| `oreorbit-2026-11-28.jpg` | Atlas screenshot (1600×1000) in the Work section, live look since atlas build 80. A new look means a new filename. |
+| `og-david-madali.jpg`, `oreorbit.jpg`, `oreorbit-2026-11.jpg` | Older versions. They stay for old links and caches; nothing on the page uses them. |
 
 ## Inside each page, top to bottom
 1. **`<head>`:**
